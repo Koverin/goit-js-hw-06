@@ -8,5 +8,3 @@ categoryEl.forEach((elem) => {
     `Category: ${elem.firstElementChild.textContent}, Elements: ${elem.lastElementChild.children.length}`
   );
 });
-
-// Completed

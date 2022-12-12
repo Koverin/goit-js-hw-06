@@ -15,4 +15,3 @@ function validationInput(event) {
   }
 }
 
-// Completed

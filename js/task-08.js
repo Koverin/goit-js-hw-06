@@ -1,16 +1,30 @@
-// const form = document.querySelector(".login-form");
-// console.log(form);
+const form = document.querySelector(".login-form");
+console.log(form);
 
-// form.addEventListener("submit", sendingForm);
+form.addEventListener("submit", sendingForm);
 
-// function sendingForm(event) {
-//   event.preventDefault();
-//   const { email, password } = event.currentTarget.elements;
+function sendingForm(event) {
+  event.preventDefault();
+  const formEl = event.currentTarget.elements;
 
-//   if (email && password) {
-//     alert("Все поля должны быть заполнены");
-//   }
+  const email = formEl.email.value;
+  const password = formEl.password.value;
+  const formData = {
+    email,
+    password,
+  };
+
+  console.log(formData);
+
+  if (email === "" || password === "") {
+    alert("Все поля должны быть заполнены");
+  }
+
+  event.currentTarget.reset();
+}
+
+// const formData = new FormData(event.currentTarget);
+// formData.forEach((email, password) => {
 //   console.log(email);
 //   console.log(password);
-//   console.log(event.currentTarget.elements);
-// }
+// });

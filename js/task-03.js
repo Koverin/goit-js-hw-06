@@ -29,5 +29,3 @@ console.log(markup);
 
 galleryEl.insertAdjacentHTML("beforeend", markup);
 console.log(galleryEl);
-
-// Completed

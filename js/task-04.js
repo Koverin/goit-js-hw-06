@@ -45,5 +45,3 @@ myCounter.prototype.decrement = function () {
 const counterNew = new myCounter({ rootSelector: "#counter", step: 1 });
 console.log(myCounter);
 console.log(counterNew);
-
-// Completed

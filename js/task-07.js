@@ -7,4 +7,3 @@ input.addEventListener("input", (event) => {
   span.style.fontSize = `${fontSize}px`;
 });
 
-// Completed

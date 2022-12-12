@@ -23,5 +23,3 @@ const ingredientsAll = ingredients.map((ingredient) => {
 console.log(ingredientsAll);
 
 ingredientsEl.append(...ingredientsAll);
-
-// Completed
